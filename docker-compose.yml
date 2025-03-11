@@ -53,3 +53,9 @@ services:
     deploy: {}
     environment:
       - CLI_ARGS=--cpu
+
+volumes:
+  stable-diffusion-data-vol:
+    external: true
+  stable-diffusion-output-vol:
+    external: true
